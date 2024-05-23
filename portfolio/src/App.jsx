@@ -1,9 +1,9 @@
-import Header from "./components/landing_page/Header";
+import Landing_page from "./components/landing_page/Landing_page.jsx";
 
 function App() {
   return (
     <div>
-      <Header />
+      <Landing_page />
     </div>
   );
 }
