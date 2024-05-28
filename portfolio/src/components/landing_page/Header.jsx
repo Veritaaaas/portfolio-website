@@ -2,7 +2,7 @@ import "../../index.css";
 
 function Header() {
     return (
-        <header className="pl-16 pr-16 grid grid-cols-2 justify-center items-center">
+        <header className="pl-16 pr-16 grid grid-cols-2 justify-center items-center ">
             <div className="flex gap-12">
                 <div className="flex light-gray gap-12 rounded-3xl pl-4 pr-2 pt-1 pb-1 items-center">
                     <h2>rodneymaisog@gmail.com</h2>
@@ -13,7 +13,7 @@ function Header() {
                 </div>
             </div>
             <div className="flex justify-end">
-                <div className="flex gap-2">
+                <div className="flex gap-2 text-2xl">
                     <h2>LinkedIn</h2>
                     <h2>/</h2>
                     <h2>Github</h2>
