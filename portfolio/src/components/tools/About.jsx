@@ -22,6 +22,17 @@ function About() {
         pauseOnHover: false
       };
     
+    const techStack = [
+        { src: flask, alt: 'flask' },
+        { src: python, alt: 'python' },
+        { src: react, alt: 'react' },
+        { src: javascript, alt: 'javascript' },
+        { src: html, alt: 'html' },
+        { src: tailwind, alt: 'tailwind' },
+        { src: node, alt: 'node' },
+        { src: git, alt: 'git' },
+    ];
+    
     return (
         <div className="flex flex-col justify-between h-screen bg-[#FDFDFD] landing-page px-8">
             <div className="bg-blue mt-[10rem] relative landing-page min-h-fit">
@@ -40,37 +51,11 @@ function About() {
             </div>
             <div className=''>
                 <Slider {...settings}>
-                    <div className="flex justify-center items-center">
-                        <img src={flask} alt="flask" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={python} alt="python" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={react} alt="react" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={javascript} alt="javascript" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={html} alt="html" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={tailwind} alt="tailwind" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={node} alt="node" className="w-[100px] h-[100px]"/>
-                    </div>
-
-                    <div className="flex justify-center items-center">
-                        <img src={git} alt="git" className="w-[100px] h-[100px]"/>
-                    </div>
+                    {techStack.map((tech, index) => (
+                        <div key={index} className="flex justify-center items-center">
+                            <img src={tech.src} alt={tech.alt} className="h-[100px]"/>
+                        </div>
+                    ))}
                 </Slider>
             </div>
         </div>
