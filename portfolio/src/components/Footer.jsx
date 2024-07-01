@@ -3,7 +3,7 @@ import { PiHandshakeFill } from "react-icons/pi";
 
 function Footer() {
   return (
-    <div className="bg-[#FDFDFD] footer p-8">
+    <div className="bg-black footer p-8">
         <div className="flex justify-center">
             <div className="flex flex-col gap-2 items-center">
                 <div className="rounded-full bg-[#F6F5F4] aspect-square h-[200px] max-w-[200px] flex items-center justify-center">
