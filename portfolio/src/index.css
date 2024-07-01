@@ -32,6 +32,10 @@ body {
   grid-template-columns: 1fr 1.5fr;
 }
 
+.footer {
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+}
 
 .light-gray {
   background-color: #e0dfdf;
