@@ -34,8 +34,8 @@ function About() {
     ];
     
     return (
-        <div className="flex flex-col justify-between h-screen bg-[#FDFDFD] landing-page px-8">
-            <div className="bg-blue mt-[10rem] relative landing-page min-h-fit">
+        <div className="flex flex-col justify-between m-0 min-h-screen bg-[#FDFDFD] px-8 ">
+            <div className="relative">
                 <div className="bg-white shadow-2xl z-0 h-[150px] w-[450px] absolute
                 left-[25%]"/>
             

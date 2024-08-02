@@ -4,12 +4,12 @@ import MyParticles from "./MyParticles";
 
 function landing_page() {
     return (
-        <div className="bg-[#F6F5F4] landing_page pt-4 relative min-h-screen">
+        <div className="bg-[#F6F5F4] landing_page pt-4 relative m-0 h-screen">
             <MyParticles/>
             <Header className="z-10"/>
-            <div className="grid grid-cols-2 min-h-screen">
-                <div className="flex items-end">
-                    <img src={image} alt="personal_pic" className="h-[920px]" />
+            <div className="grid grid-cols-2">
+                <div className="flex items-end justify-center">
+                    <img src={image} alt="personal_pic" className="h-[670px]" />
                 </div>
                 <div className="flex justify-center items-center z-10">
                     <h1 className="text-[70px] w-[36rem] 

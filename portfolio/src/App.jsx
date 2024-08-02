@@ -6,21 +6,21 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function App() {
   return (
-    <Parallax pages={4.5}>
-      <ParallaxLayer offset={0}>
-        <Landing_page />
-      </ParallaxLayer>
-      <ParallaxLayer offset={1} speed={0.4}>
-        <About />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2} speed={0.7}>
-        <Projects />
-      </ParallaxLayer>
-      <ParallaxLayer offset={3.9} speed={0}>
-        <Footer />
-      </ParallaxLayer>
-    </Parallax>
-  );
+        <Parallax pages={5}>
+              <ParallaxLayer offset={0} speed={0.8}>
+                <Landing_page />
+              </ParallaxLayer>
+              <ParallaxLayer offset={1} speed={0.2}>
+                <About />
+              </ParallaxLayer>
+              <ParallaxLayer offset={2} speed={0.7}>
+                <Projects />
+              </ParallaxLayer>
+              <ParallaxLayer offset={4} speed={0.5}>
+                <Footer />
+              </ParallaxLayer>
+            </Parallax>
+          );
 }
 
 export default App;
